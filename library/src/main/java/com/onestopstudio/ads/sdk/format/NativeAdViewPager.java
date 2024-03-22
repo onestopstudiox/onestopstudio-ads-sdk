@@ -10,6 +10,7 @@ import static com.onestopstudio.ads.sdk.util.Constant.UNITY;
 
 import android.app.Activity;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.ads.AdListener;
@@ -32,6 +34,7 @@ import com.onestopstudio.ads.sdk.util.NativeTemplateStyle;
 import com.onestopstudio.ads.sdk.util.TemplateView;
 import com.onestopstudio.ads.sdk.util.Tools;
 
+@RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
 public class NativeAdViewPager {
 
     public static class Builder {

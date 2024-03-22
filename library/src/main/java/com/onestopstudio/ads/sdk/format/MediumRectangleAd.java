@@ -29,18 +29,11 @@ public class MediumRectangleAd {
         private final Activity activity;
         private AdView adView;
         private AdManagerAdView adManagerAdView;
-        FrameLayout ironSourceBannerView;
         private String adStatus = "";
         private String adNetwork = "";
         private String backupAdNetwork = "";
         private String adMobBannerId = "";
         private String googleAdManagerBannerId = "";
-        private String fanBannerId = "";
-        private String unityBannerId = "";
-        private String appLovinBannerId = "";
-        private String appLovinBannerZoneId = "";
-        private String mopubBannerId = "";
-        private String ironSourceBannerId = "";
         private int placementStatus = 1;
         private boolean darkTheme = false;
         private boolean legacyGDPR = false;
@@ -76,36 +69,6 @@ public class MediumRectangleAd {
 
         public Builder setGoogleAdManagerBannerId(String googleAdManagerBannerId) {
             this.googleAdManagerBannerId = googleAdManagerBannerId;
-            return this;
-        }
-
-        public Builder setFanBannerId(String fanBannerId) {
-            this.fanBannerId = fanBannerId;
-            return this;
-        }
-
-        public Builder setUnityBannerId(String unityBannerId) {
-            this.unityBannerId = unityBannerId;
-            return this;
-        }
-
-        public Builder setAppLovinBannerId(String appLovinBannerId) {
-            this.appLovinBannerId = appLovinBannerId;
-            return this;
-        }
-
-        public Builder setAppLovinBannerZoneId(String appLovinBannerZoneId) {
-            this.appLovinBannerZoneId = appLovinBannerZoneId;
-            return this;
-        }
-
-        public Builder setMopubBannerId(String mopubBannerId) {
-            this.mopubBannerId = mopubBannerId;
-            return this;
-        }
-
-        public Builder setIronSourceBannerId(String ironSourceBannerId) {
-            this.ironSourceBannerId = ironSourceBannerId;
             return this;
         }
 

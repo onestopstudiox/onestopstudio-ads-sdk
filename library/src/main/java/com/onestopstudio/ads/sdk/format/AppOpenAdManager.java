@@ -2,9 +2,11 @@ package com.onestopstudio.ads.sdk.format;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Build;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.FullScreenContentCallback;
@@ -15,6 +17,7 @@ import com.onestopstudio.ads.sdk.util.OnShowAdCompleteListener;
 
 import java.util.Date;
 
+@RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
 public class AppOpenAdManager {
 
     private static final String LOG_TAG = "AppOpenAd";

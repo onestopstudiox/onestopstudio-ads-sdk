@@ -10,6 +10,7 @@ import static com.onestopstudio.ads.sdk.util.Constant.NONE;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -32,6 +34,7 @@ import com.onestopstudio.ads.sdk.util.NativeTemplateStyle;
 import com.onestopstudio.ads.sdk.util.TemplateView;
 import com.onestopstudio.ads.sdk.util.Tools;
 
+@RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
 public class NativeAdViewHolder extends RecyclerView.ViewHolder {
 
     private static final String TAG = "AdNetwork";
@@ -75,7 +78,7 @@ public class NativeAdViewHolder extends RecyclerView.ViewHolder {
 
     }
 
-    public void loadNativeAd(Context context, String adStatus, int placementStatus, String adNetwork, String backupAdNetwork, String adMobNativeId, String adManagerNativeId, String fanNativeId, String appLovinNativeId, boolean darkTheme, boolean legacyGDPR, String nativeAdStyle) {
+    public void loadNativeAd(Context context, String adStatus, int placementStatus, String adNetwork, String backupAdNetwork, String adMobNativeId, String adManagerNativeId, boolean darkTheme, boolean legacyGDPR) {
         if (adStatus.equals(AD_STATUS_ON)) {
             if (placementStatus != 0) {
                 switch (adNetwork) {

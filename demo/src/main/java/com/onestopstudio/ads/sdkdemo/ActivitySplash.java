@@ -7,9 +7,11 @@ import static com.onestopstudio.ads.sdk.util.Constant.ADMOB;
 
 import android.app.Application;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.multidex.BuildConfig;
 
@@ -18,6 +20,7 @@ import androidx.multidex.BuildConfig;
 
 import com.onestopstudio.ads.sdk.format.AdNetwork;
 
+@RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
 public class ActivitySplash extends AppCompatActivity {
 
     private static final long COUNTER_TIME = 2000;

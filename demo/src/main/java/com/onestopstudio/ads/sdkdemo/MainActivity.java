@@ -1,8 +1,10 @@
 package com.onestopstudio.ads.sdkdemo;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.multidex.BuildConfig;
@@ -23,6 +25,7 @@ import com.onestopstudio.ads.sdk.format.InterstitialAd;
 import com.onestopstudio.ads.sdk.format.MediumRectangleAd;
 import com.onestopstudio.ads.sdk.format.NativeAd;
 
+@RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
@@ -85,11 +88,6 @@ public class MainActivity extends AppCompatActivity {
                 .setBackupAdNetwork(Constant.BACKUP_AD_NETWORK)
                 .setAdMobBannerId(Constant.ADMOB_BANNER_ID)
                 .setGoogleAdManagerBannerId(Constant.GOOGLE_AD_MANAGER_BANNER_ID)
-                .setFanBannerId(Constant.FAN_BANNER_ID)
-                .setUnityBannerId(Constant.UNITY_BANNER_ID)
-                .setAppLovinBannerId(Constant.APPLOVIN_BANNER_ID)
-                .setAppLovinBannerZoneId(Constant.APPLOVIN_BANNER_ZONE_ID)
-                .setIronSourceBannerId(Constant.IRONSOURCE_BANNER_ID)
                 .setDarkTheme(false)
                 .build();
     }
@@ -101,11 +99,6 @@ public class MainActivity extends AppCompatActivity {
                 .setBackupAdNetwork(Constant.BACKUP_AD_NETWORK)
                 .setAdMobInterstitialId(Constant.ADMOB_INTERSTITIAL_ID)
                 .setGoogleAdManagerInterstitialId(Constant.GOOGLE_AD_MANAGER_INTERSTITIAL_ID)
-                .setFanInterstitialId(Constant.FAN_INTERSTITIAL_ID)
-                .setUnityInterstitialId(Constant.UNITY_INTERSTITIAL_ID)
-                .setAppLovinInterstitialId(Constant.APPLOVIN_INTERSTITIAL_ID)
-                .setAppLovinInterstitialZoneId(Constant.APPLOVIN_INTERSTITIAL_ZONE_ID)
-                .setIronSourceInterstitialId(Constant.IRONSOURCE_INTERSTITIAL_ID)
                 .setInterval(1)
                 .build();
     }
@@ -121,8 +114,6 @@ public class MainActivity extends AppCompatActivity {
                 .setBackupAdNetwork(Constant.BACKUP_AD_NETWORK)
                 .setAdMobNativeId(Constant.ADMOB_NATIVE_ID)
                 .setAdManagerNativeId(Constant.GOOGLE_AD_MANAGER_NATIVE_ID)
-                .setFanNativeId(Constant.FAN_NATIVE_ID)
-                .setAppLovinNativeId(Constant.APPLOVIN_NATIVE_MANUAL_ID)
                 .setNativeAdStyle(Constant.STYLE_DEFAULT)
                 .setDarkTheme(false)
                 .build();

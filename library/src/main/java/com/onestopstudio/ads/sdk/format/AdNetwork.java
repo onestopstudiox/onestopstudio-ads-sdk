@@ -9,13 +9,17 @@ import static com.onestopstudio.ads.sdk.util.Constant.GOOGLE_AD_MANAGER;
 import static com.onestopstudio.ads.sdk.util.Constant.NONE;
 
 import android.app.Activity;
+import android.os.Build;
 import android.util.Log;
+
+import androidx.annotation.RequiresApi;
 
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.AdapterStatus;
 
 import java.util.Map;
 
+@RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
 public class AdNetwork {
 
     public static class Initialize {

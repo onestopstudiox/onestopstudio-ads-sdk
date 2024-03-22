@@ -8,11 +8,13 @@ import static com.onestopstudio.ads.sdk.util.Constant.GOOGLE_AD_MANAGER;
 import static com.onestopstudio.ads.sdk.util.Constant.NONE;
 
 import android.app.Activity;
+import android.os.Build;
 import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdView;
@@ -21,6 +23,7 @@ import com.google.android.gms.ads.admanager.AdManagerAdView;
 import com.onestopstudio.ads.sdk.R;
 import com.onestopstudio.ads.sdk.util.Tools;
 
+@RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
 public class BannerAd {
 
     public static class Builder {

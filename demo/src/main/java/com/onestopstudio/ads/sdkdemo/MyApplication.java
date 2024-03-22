@@ -10,10 +10,12 @@ import android.app.Activity;
 import android.app.Application;
 import android.app.Application.ActivityLifecycleCallbacks;
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
@@ -28,6 +30,7 @@ import com.onestopstudio.ads.sdk.format.AppOpenAdManager;
 import com.onestopstudio.ads.sdk.format.AppOpenAdMob;
 import com.onestopstudio.ads.sdk.util.OnShowAdCompleteListener;
 
+@RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
 public class MyApplication extends Application implements ActivityLifecycleCallbacks, LifecycleObserver {
 
     private static MyApplication mInstance;

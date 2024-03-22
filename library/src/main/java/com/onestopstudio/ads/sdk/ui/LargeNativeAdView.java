@@ -27,7 +27,6 @@ public class LargeNativeAdView extends LinearLayout {
     private Drawable startAppDrawable;
 
     private Button btnNativeAdMob;
-    private Button btnNativeStartApp;
 
     public LargeNativeAdView(Context context) {
         super(context);
@@ -70,20 +69,12 @@ public class LargeNativeAdView extends LinearLayout {
             setAdMobNativeButtonColor(adMobDrawable);
         }
 
-        if (startAppDrawable != null) {
-            setStartAppNativeButtonColor(startAppDrawable);
-        }
-
         arr.recycle();
 
     }
 
     public void setAdMobNativeButtonColor(Drawable background) {
         btnNativeAdMob.setBackground(background);
-    }
-
-    public void setStartAppNativeButtonColor(Drawable background) {
-        btnNativeStartApp.setBackground(background);
     }
 
 }

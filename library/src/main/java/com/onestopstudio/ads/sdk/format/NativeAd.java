@@ -10,6 +10,7 @@ import static com.onestopstudio.ads.sdk.util.Constant.UNITY;
 
 import android.app.Activity;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.ads.AdListener;
@@ -31,6 +33,7 @@ import com.onestopstudio.ads.sdk.util.NativeTemplateStyle;
 import com.onestopstudio.ads.sdk.util.TemplateView;
 import com.onestopstudio.ads.sdk.util.Tools;
 
+@RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
 public class NativeAd {
 
     public static class Builder {
@@ -47,23 +50,11 @@ public class NativeAd {
         AdManagerTemplateView adManagerNativeAd;
         LinearLayout adManagerNativeBackground;
 
-        View startappNativeAd;
-        ImageView startappNativeImage;
-        ImageView startappNativeIcon;
-        TextView startappNativeTitle;
-        TextView startappNativeDescription;
-        Button startappNativeButton;
-        LinearLayout startappNativeBackground;
-
-        FrameLayout applovinNativeAd;
-
         private String adStatus = "";
         private String adNetwork = "";
         private String backupAdNetwork = "";
         private String adMobNativeId = "";
         private String adManagerNativeId = "";
-        private String fanNativeId = "";
-        private String appLovinNativeId = "";
         private int placementStatus = 1;
         private boolean darkTheme = false;
         private boolean legacyGDPR = false;
@@ -106,16 +97,6 @@ public class NativeAd {
 
         public Builder setAdManagerNativeId(String adManagerNativeId) {
             this.adManagerNativeId = adManagerNativeId;
-            return this;
-        }
-
-        public Builder setFanNativeId(String fanNativeId) {
-            this.fanNativeId = fanNativeId;
-            return this;
-        }
-
-        public Builder setAppLovinNativeId(String appLovinNativeId) {
-            this.appLovinNativeId = appLovinNativeId;
             return this;
         }
 

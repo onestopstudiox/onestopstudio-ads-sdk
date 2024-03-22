@@ -8,9 +8,11 @@ import static com.onestopstudio.ads.sdk.util.Constant.GOOGLE_AD_MANAGER;
 import static com.onestopstudio.ads.sdk.util.Constant.NONE;
 
 import android.app.Activity;
+import android.os.Build;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.FullScreenContentCallback;
@@ -20,6 +22,7 @@ import com.google.android.gms.ads.admanager.AdManagerInterstitialAdLoadCallback;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.onestopstudio.ads.sdk.util.Tools;
 
+@RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
 public class InterstitialAd {
 
     public static class Builder {
@@ -36,12 +39,6 @@ public class InterstitialAd {
         private String backupAdNetwork = "";
         private String adMobInterstitialId = "";
         private String googleAdManagerInterstitialId = "";
-        private String fanInterstitialId = "";
-        private String unityInterstitialId = "";
-        private String appLovinInterstitialId = "";
-        private String appLovinInterstitialZoneId = "";
-        private String mopubInterstitialId = "";
-        private String ironSourceInterstitialId = "";
         private int placementStatus = 1;
         private int interval = 3;
 
@@ -82,36 +79,6 @@ public class InterstitialAd {
 
         public Builder setGoogleAdManagerInterstitialId(String googleAdManagerInterstitialId) {
             this.googleAdManagerInterstitialId = googleAdManagerInterstitialId;
-            return this;
-        }
-
-        public Builder setFanInterstitialId(String fanInterstitialId) {
-            this.fanInterstitialId = fanInterstitialId;
-            return this;
-        }
-
-        public Builder setUnityInterstitialId(String unityInterstitialId) {
-            this.unityInterstitialId = unityInterstitialId;
-            return this;
-        }
-
-        public Builder setAppLovinInterstitialId(String appLovinInterstitialId) {
-            this.appLovinInterstitialId = appLovinInterstitialId;
-            return this;
-        }
-
-        public Builder setAppLovinInterstitialZoneId(String appLovinInterstitialZoneId) {
-            this.appLovinInterstitialZoneId = appLovinInterstitialZoneId;
-            return this;
-        }
-
-        public Builder setMopubInterstitialId(String mopubInterstitialId) {
-            this.mopubInterstitialId = mopubInterstitialId;
-            return this;
-        }
-
-        public Builder setIronSourceInterstitialId(String ironSourceInterstitialId) {
-            this.ironSourceInterstitialId = ironSourceInterstitialId;
             return this;
         }
 
