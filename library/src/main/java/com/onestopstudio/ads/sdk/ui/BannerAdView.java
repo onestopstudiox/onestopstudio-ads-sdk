@@ -11,6 +11,7 @@ import androidx.annotation.RequiresApi;
 
 import com.onestopstudio.ads.sdk.R;
 
+@RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
 public class BannerAdView extends LinearLayout {
 
     private Context mContext;
@@ -39,7 +40,6 @@ public class BannerAdView extends LinearLayout {
         initView();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public BannerAdView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }

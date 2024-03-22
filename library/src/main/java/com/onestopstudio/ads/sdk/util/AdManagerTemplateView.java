@@ -41,6 +41,7 @@ import com.onestopstudio.ads.sdk.R;
 /**
  * Base class for a template view. *
  */
+@RequiresApi(api = Build.VERSION_CODES.TIRAMISU)
 public class AdManagerTemplateView extends FrameLayout {
 
     private int templateType;
@@ -74,7 +75,6 @@ public class AdManagerTemplateView extends FrameLayout {
         initView(context, attrs);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public AdManagerTemplateView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         initView(context, attrs);

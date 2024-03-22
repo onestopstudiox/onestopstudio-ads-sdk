@@ -103,7 +103,7 @@ public class NativeAdViewHolder extends RecyclerView.ViewHolder {
                                     .withAdListener(new AdListener() {
                                         @Override
                                         public void onAdFailedToLoad(@NonNull LoadAdError adError) {
-                                            loadBackupNativeAd(context, adStatus, placementStatus, backupAdNetwork, adMobNativeId, adManagerNativeId, fanNativeId, appLovinNativeId, darkTheme, legacyGDPR, nativeAdStyle);
+                                            loadBackupNativeAd(context, adStatus, placementStatus, backupAdNetwork, adMobNativeId, adManagerNativeId, darkTheme, legacyGDPR);
                                         }
                                     })
                                     .build();
@@ -137,7 +137,7 @@ public class NativeAdViewHolder extends RecyclerView.ViewHolder {
                                     .withAdListener(new AdListener() {
                                         @Override
                                         public void onAdFailedToLoad(@NonNull LoadAdError adError) {
-                                            loadBackupNativeAd(context, adStatus, placementStatus, backupAdNetwork, adMobNativeId, adManagerNativeId, fanNativeId, appLovinNativeId, darkTheme, legacyGDPR, nativeAdStyle);
+                                            loadBackupNativeAd(context, adStatus, placementStatus, backupAdNetwork, adMobNativeId, adManagerNativeId, darkTheme, legacyGDPR);
                                         }
                                     })
                                     .build();
@@ -152,7 +152,7 @@ public class NativeAdViewHolder extends RecyclerView.ViewHolder {
         }
     }
 
-    public void loadBackupNativeAd(Context context, String adStatus, int placementStatus, String backupAdNetwork, String adMobNativeId, String adManagerNativeId, String fanNativeId, String appLovinNativeId, boolean darkTheme, boolean legacyGDPR, String nativeAdStyle) {
+    public void loadBackupNativeAd(Context context, String adStatus, int placementStatus, String backupAdNetwork, String adMobNativeId, String adManagerNativeId, boolean darkTheme, boolean legacyGDPR) {
         if (adStatus.equals(AD_STATUS_ON)) {
             if (placementStatus != 0) {
                 switch (backupAdNetwork) {
