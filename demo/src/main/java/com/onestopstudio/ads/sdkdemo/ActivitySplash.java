@@ -2,12 +2,19 @@ package com.onestopstudio.ads.sdkdemo;
 
 import static com.onestopstudio.ads.sdk.util.Constant.ADMOB;
 
+
+//import static com.solodroid.ads.sdk.util.Constant.ADMOB;
+
 import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.multidex.BuildConfig;
+
+//import com.solodroid.ads.sdk.format.AdNetwork;
+
 
 import com.onestopstudio.ads.sdk.format.AdNetwork;
 
