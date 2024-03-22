@@ -7,6 +7,8 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+//import com.solodroid.ads.sdk.format.BannerAd;
+
 import com.onestopstudio.ads.sdk.format.BannerAd;
 
 public class SecondActivity extends AppCompatActivity {

@@ -5,6 +5,17 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.multidex.BuildConfig;
+
+/*
+import com.solodroid.ads.sdk.format.AdNetwork;
+import com.solodroid.ads.sdk.format.BannerAd;
+import com.solodroid.ads.sdk.format.InterstitialAd;
+import com.solodroid.ads.sdk.format.MediumRectangleAd;
+import com.solodroid.ads.sdk.format.NativeAd;
+
+ */
+
 
 import com.onestopstudio.ads.sdk.format.AdNetwork;
 import com.onestopstudio.ads.sdk.format.BannerAd;

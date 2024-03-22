@@ -3,6 +3,9 @@ package com.onestopstudio.ads.sdkdemo;
 import static com.onestopstudio.ads.sdk.util.Constant.ADMOB;
 import static com.onestopstudio.ads.sdk.util.Constant.GOOGLE_AD_MANAGER;
 
+//import static com.solodroid.ads.sdk.util.Constant.ADMOB;
+//import static com.solodroid.ads.sdk.util.Constant.GOOGLE_AD_MANAGER;
+
 import android.app.Activity;
 import android.app.Application;
 import android.app.Application.ActivityLifecycleCallbacks;
@@ -16,6 +19,10 @@ import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 import androidx.lifecycle.ProcessLifecycleOwner;
 import androidx.multidex.MultiDex;
+
+//import com.solodroid.ads.sdk.format.AppOpenAdManager;
+//import com.solodroid.ads.sdk.format.AppOpenAdMob;
+//import com.solodroid.ads.sdk.util.OnShowAdCompleteListener;
 
 import com.onestopstudio.ads.sdk.format.AppOpenAdManager;
 import com.onestopstudio.ads.sdk.format.AppOpenAdMob;
